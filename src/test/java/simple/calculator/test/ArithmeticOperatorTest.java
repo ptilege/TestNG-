@@ -30,4 +30,21 @@ public class ArithmeticOperatorTest {
         softAssert.assertAll();
 
     }
+
+    @Test(priority = 1)
+    public void testSubtraction(){
+        System.out.println("****************01st Test case for cal Subtraction****************");
+        System.out.println("<<<<<<<<<<<<<<<<First subtraction calculation>>>>>>>>>>>>>>>>");
+        int actualValueSubtraction1 = ArithmeticOperator.calSubtraction(20, 5);
+        System.out.println("Actual Sub 1 Value is : "+actualValueSubtraction1);
+        Assert.assertEquals(actualValueSubtraction1,15,"Failed to calc subtraction 1");
+
+        System.out.println("<<<<<<<<<<<<<<<<Second sum calculation>>>>>>>>>>>>>>>>");
+        int actualValueSubtraction2 = ArithmeticOperator.calSubtraction(30, 5);
+        System.out.println("Actual Sub 2 Value is : "+actualValueSubtraction2);
+        Assert.assertEquals(actualValueSubtraction2,25,"Failed to calc Subtraction 2");
+
+
+
+    }
 }
