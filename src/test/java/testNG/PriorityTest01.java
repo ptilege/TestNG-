@@ -1,5 +1,6 @@
 package testNG;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class PriorityTest01 {
@@ -7,6 +8,7 @@ public class PriorityTest01 {
     @Test(priority = 0)
     public void testLogin(){
         System.out.println("Login");
+//        Assert.assertEquals("1","2");
     }
 
     @Test(priority = 1)
